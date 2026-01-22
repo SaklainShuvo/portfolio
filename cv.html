@@ -1,4 +1,350 @@
-<div class="project-item">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Saklain Shuvo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+        }
+
+        .cv-header {
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid #3b82f6;
+            margin-bottom: 2rem;
+        }
+
+        .cv-header h1 {
+            color: #1f2937;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-header .title {
+            color: #3b82f6;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6b7280;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            color: #1f2937;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .subsection {
+            margin-bottom: 1.5rem;
+        }
+
+        .subsection-title {
+            color: #3b82f6;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subsection-subtitle {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            color: #4b5563;
+            margin-left: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .skill-group h4 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-item {
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 0.4rem 0.8rem;
+            border-radius: 16px;
+            font-size: 0.9rem;
+        }
+
+        .project-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .tech-tag {
+            background-color: #f3f4f6;
+            color: #374151;
+            padding: 0.3rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #2563eb;
+        }
+
+        ul {
+            margin-left: 2rem;
+            color: #4b5563;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .cv-container {
+                padding: 1.5rem;
+            }
+
+      .cv-header h1 {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .back-button {
+                display: none;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back to Portfolio</a>
+    
+    <div class="cv-container">
+        <div class="cv-header">
+            <h1>Saklain Shuvo</h1>
+            <div class="title">Software Developer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    📧 saklainshuvo@email.com
+                </div>
+                <div class="contact-item">
+                    🔗 linkedin.com/in/saklainshuvo
+                </div>
+                <div class="contact-item">
+                    💻 github.com/saklainshuvo
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="description">
+                Passionate undergraduate student focused on software development and problem-solving. 
+                Experienced in building full-stack applications using modern technologies. 
+                Strong foundation in programming fundamentals with a keen interest in creating 
+                innovative solutions that deliver exceptional user experiences.
+            </p>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="subsection">
+                <h3 class="subsection-title">Bachelor of Science in Computer Science</h3>
+                <div class="subsection-subtitle">University Name | Expected Graduation: 2026</div>
+                <ul>
+                    <li>Focus on Software Engineering and Web Development</li>
+                    <li>Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Technologies</li>
+                </ul>
+            </div>
+        </div>
+
+      <!-- Skills -->
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Languages</h4>
+                    <div class="skill-list">
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Frameworks & Libraries</h4>
+                    <div class="skill-list">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Express</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Tools & Technologies</h4>
+                    <div class="skill-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h4>Other Skills</h4>
+                    <div class="skill-list">
+                        <span class="skill-item">RESTful APIs</span>
+                        <span class="skill-item">Responsive Design</span>
+                        <span class="skill-item">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <h3 class="subsection-title">GrubGo - Food Delivery Platform</h3>
+                    <div class="subsection-subtitle">2024</div>
+                </div>
+                <p class="description">
+                    Developed a full-stack food ordering and delivery platform enabling users to browse 
+                    restaurants, place orders, and track deliveries in real-time.
+                </p>
+                <ul>
+                    <li>Built RESTful API with Flask for backend operations</li>
+                    <li>Implemented user authentication with Flask-Login and bcrypt</li>
+                    <li>Designed responsive frontend using HTML5, CSS3, and JavaScript</li>
+                    <li>Integrated SQLite database with SQLAlchemy ORM</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <h3 class="subsection-title">Personal Portfolio Website</h3>
+                    <div class="subsection-subtitle">2025</div>
+                </div>
+                <p class="description">
+                    Created a responsive portfolio website to showcase projects and skills.
+                </p>
+                <ul>
+                    <li>Designed modern, mobile-first interface with smooth animations</li>
+                    <li>Implemented smooth scrolling and interactive navigation</li>
+                    <li>Optimized for performance and accessibility</li>
+                </ul>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+
+          <div class="project-item">
                 <div class="project-header">
                     <h3 class="subsection-title">Task Management Application</h3>
                     <div class="subsection-subtitle">2024</div>
