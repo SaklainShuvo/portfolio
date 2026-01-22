@@ -6,6 +6,47 @@
     <title>Saklain Shuvo - Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-content {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .profile-image-container {
+            flex: 0 0 300px;
+        }
+        
+        .profile-image {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-image-container {
+                flex: 0 0 auto;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -62,6 +103,9 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
+                <div class="profile-image-container">
+                    <img src="profile.jpg" alt="Saklain Shuvo" class="profile-image">
+                </div>
                 <div class="about-text">
                     <p>
                         I'm a passionate software developer currently pursuing my undergraduate degree. 
@@ -81,6 +125,7 @@
             </div>
         </div>
     </section>
+    
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
@@ -131,7 +176,7 @@
                     <div class="project-header">
                         <h3>GrubGo</h3>
                         <div class="project-links">
-                            <a href="https://github.com/saklainshuvo/GrubGO" target="_blank" class="project-link">
+                            <a href="https://github.com/SaklainShuvo/GrubGO" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
